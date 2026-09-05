@@ -18,7 +18,7 @@ int main()
         if(a[i]<a[i-1]){
             sorted=false;
             break;
-           
+            
 
         }
     }
