@@ -24,6 +24,7 @@ int main()
     for(int i = 0; i <= j; i++)
     {
         cout << a[i] << " ";
+        
     }
     return 0;
 }
