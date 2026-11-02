@@ -31,11 +31,18 @@ int getSize(Node *root){
     }
     return (1+getSize(root->left)+getSize(root->right));
 }
+int sum(Node *root){
+    if (root==NULL)
+    {
+        return 0;
+    }
+    return(root->data+sum(root->left)+sum(root->right));
+}
 int main()
 {
     cout<<"Enter the first node of the tree: "<<endl;
     Node *root= BinaryTree();
-    cout<<"Total nodes are: "<<getSize(root);
-    
+    cout<<"Total nodes are: "<<getSize(root)<<endl;
+    cout<<"Sum of the nodes of the tree is "<<sum(root);
     return 0;
 }
